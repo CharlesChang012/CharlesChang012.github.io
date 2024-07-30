@@ -96,12 +96,28 @@
 }
 
 #Motion_planning_2D{
+    /*
     width: 40%;
     height: 50%;
     left: 50%;
-    top: 45%;
+    top: 45%;*/
+    width: 40%;
+    height: 60%;
+    left: 5%;
+    top: 22%;
     position: absolute;
     background-image: url("./img/2D.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#AStar_search{
+    width: 40%;
+    height: 55%;
+    left: 5%;
+    top: 65%;
+    position: absolute;
+    background-image: url("./img/AStar_search.png");
     background-size:contain;
     background-repeat: no-repeat;
 }
