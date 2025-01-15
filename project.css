@@ -83,6 +83,30 @@
 .project_info{
     text-align: start;
 }
+
+/* ----- ANA* vs A* Project ----- */
+#ANAStar_result{
+    width: 40%;
+    height: 65%;
+    left: 5%;
+    top: 25%;
+    position: absolute;
+    background-image: url("./img/ANAstar_result.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#ANAStar_env{
+    width: 30%;
+    height: 40%;
+    left: 55%;
+    top: 55%;
+    position: absolute;
+    background-image: url("./img/ANAstar_env.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
 /* ----- Motion Planning Project ----- */
 #Motion_planning_3D{
     width: 40%;
