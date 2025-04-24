@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=v3.12.0"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?r=v3.12.0"></script>
+    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="main.js"></script>
+</head>
+<body class="main">
+    <header>
+        <nav>  
+            <ul>
+                <a id="nav_home" class="nav_page" href="home.html">Home</a>
+            </ul> 
+            <ul>
+              <a id="nav_about" class="nav_page" href="main.html">About</a>
+            </ul>
+            <ul>
+                <a id="nav_projects" class="nav_page" href="project.html">Projects</a>
+                <!--<div id="nav_projects" class="nav_page">Projects</div>-->
+            </ul>
+            <ul>
+                <a class="nav_icon_div" href="https://www.linkedin.com/in/po-hsunchang" target="_blank">
+                    <img class="nav_icon" src="./img/linkedin_icon.png">
+                </a>
+            </ul>
+            <ul>
+                <a class="nav_icon_div" href="https://www.youtube.com/@user-hm5vi4fn3k" target="_blank">
+                    <img class="nav_icon" src="./img/youtube_icon.png">
+                </a>
+            </ul>
+        </nav>
+        <!-- Add navigation links, logo, or any other header content here -->
+    </header>
+
+    <main>
+        <!-- Add your main content here, such as sections, articles, and other elements -->
+        <div id="about">
+            <div id="main_photo_div">
+                <div id="photo_words_div">
+                    <div id="main_photo"></div>
+                    <p id="photo_words">Life has no limitations, except the ones you make. - Po-Hsun Chang</p>
+                </div>
+            </div>
+            <div id="main_info">
+                <div id="main_education_div" class="about_section_div">
+                    <H1 id="education" class="about_into_title about_section_word" >Education</H1>
+                    <div class="main_education_div">
+                        <div class="main_school_div">
+                            <H2 class="school about_section_word">M.S. in ECE: Robotics @UMich</H2>
+                            <H2 class="education_period about_section_word">Aug. 2024 ~ May. 2026</H2>
+                        </div>
+                        <p class="course_name about_section_word">Courses: Introduction to Algorithmic Robotics, Programming for Robotics, Mathematics for Robotics</p>
+                    </div>
+                    <div class="main_education_div second_exp">
+                        <div class="main_school_div">
+                            <H2 class="school about_section_word">B.S. in EE @NCKU</H2>
+                            <H2 class="education_period about_section_word">Sep. 2019 ~ Jun. 2023</H2>
+                        </div>
+                        <p class="course_name about_section_word">Courses: Practice of Autonomous Driving, Control Engineering, Data Engineering for Smart Cities</p>
+                    </div>
+                </div>
+                <div id="main_work_div" class="about_section_div">
+                    <H1 class="about_into_title about_section_word">Work Expereince</H1>
+                    <div class="main_work_div">
+                        <div class="main_company_div">
+                            <H2 class="company about_section_word">NCKU Space Lab - Research Assistant</H2>
+                            <H2 class="education_period about_section_word">Jul. 2023 ~ Sep. 2023</H2>
+                        </div>
+                        <p class="course_name about_section_word">SDR, DSP</p>
+                    </div>
+                    <div class="main_work_div second_exp">
+                        <div class="main_company_div">
+                            <H2 class="company about_section_word">NCKU Space Lab - Undergraduate Research Assistant</H2>
+                            <H2 class="education_period about_section_word">Jan. 2019 ~ Jun. 2023</H2>
+                        </div>
+                        <p class="course_name about_section_word">ROS, Attitude Determination, Real-time Software, Edge Device</p>
+                    </div>
+                </div> 
+                <div id="main_award_div" class="about_section_div">
+                    <H1 id="Publications" class="about_into_title about_section_word">Publications & Awards</H1>
+                    <div class="info_flex_container">
+                        <div id="pub1" class="sub_award">
+                            <p class="award about_section_word">Sheng-En Huang, </p><u id="pub_name" class="about_section_word"> Po-Hsun Chang</u><p class="award about_section_word">, Xiu-Lin Lu, and Jyh-Ching Juang,</p> 
+                            <p class="award about_section_word"> “A Satcom On-the-Move Phased-Array Antenna Tracking Algorithm on Robot Operating System.” ICCAS 2023 (pp. 1060-1065)<a id="satcom_paper_ref" href="https://doi.org/10.23919/ICCAS59377.2023.10316776" target="_blank"><img id="satcom_paper" src="./img/link.png"></a></p>
+                        </div>
+                        <div id="award3" class="sub_award">
+                            <p class="award about_section_word">Robotics: Honorable mention in 2022 Undergraduate Project Competition.</p>
+                        </div>
+                        <div id="award2" class="sub_award">
+                            <p class="award about_section_word">Aerospace: Top 10 Finalist Award in 2022 RunSpace Innovation Challenge.</p>
+                        </div>
+                        <div id="award1" class="sub_award">
+                            <p class="award about_section_word">AI: 2nd place in Data Engineering for Smart Cities course project competition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_skill_div" class="about_section_div">
+                    <H1 id="skills" class="about_into_title about_section_word">Skills</H1>
+                    <div class="sub_skill">
+                        <H2 class="skill_cat about_section_word">Programming | </H2>
+                        <p class="skill about_section_word">C/C++, Python, MATLAB, HTML, CSS</p>
+                    </div>
+                    <div class="sub_skill">
+                        <H2 class="skill_cat about_section_word">Tools | </H2>
+                        <p class="skill about_section_word">ROS, Gazebo, Linux, Git, Fusion 360, NumPy</p>
+                    </div>
+                    <div class="sub_skill">
+                        <H2 class="skill_cat about_section_word">Certificate |</H2>
+                        <div class="certificate_div">
+                            <p id="Udemy" class="skill about_section_word">Udemy: “Path Planning, Model Predictive Control, Localization”</p>
+                            <p class="skill about_section_word">Coursera: “Computational Motion Planning, Aerial Robotics"</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Add your footer content, such as copyright information, contact details, etc. -->
+    </footer>
+</body>
+</html>
