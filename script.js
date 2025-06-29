@@ -27,7 +27,7 @@ const projects = [
       "Performed camera calibration with intrinsic and extrinsic matrices using AprilTags and homography transform. \
       Kinematics: Automated a 5DoF RX200 arm by solving forward and inverse kinematics with DH table and geometry. \
       Computer Vision: Developed an object detection pipeline in OpenCV, achieving 85% ROI in real-time capability.",
-    demoUrl: "https://drive.google.com/file/d/163HYReHXyYaZsqVSgw1mXPqe8CPQQKKp/view?usp=share_link",
+    demoUrl: "https://drive.google.com/file/d/1QTnxh1EtAa5_bcI0pKfocJl8Q2-F7tI0/view?usp=sharing",
     githubUrl: "https://github.com/CharlesChang012/ROB-550_Armlab.git",
     featured: true,
   },
