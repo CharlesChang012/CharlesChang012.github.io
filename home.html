@@ -3,55 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="home.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=v3.12.0"></script>
-    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?r=v3.12.0"></script>
-    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="main.js"></script>
-    <script language="JavaScript" type="text/javascript" src="home.js"></script>
+    <title>Po-Hsun Chang - MS Robotics Student</title>
+    <meta name="description" content="Portfolio of Po-Hsun Chang, MS Robotics Student at University of Michigan specializing in software engineering and robotics.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.294.0/lucide.min.css">
 </head>
-<body class="main">
-    <header>
-        <nav>  
-            <ul>
-                <a id="nav_home" class="nav_page" href="home.html">Home</a>
-            </ul> 
-            <ul>
-              <a id="nav_about" class="nav_page" href="main.html">About</a>
-            </ul>
-            <ul>
-                <a id="nav_projects" class="nav_page" href="project.html">Projects</a>
-                <!--<div id="nav_projects" class="nav_page">Projects</div>-->
-            </ul>
-            <ul>
-                <a class="nav_icon_div" href="https://www.linkedin.com/in/po-hsunchang" target="_blank">
-                    <img class="nav_icon" src="./img/linkedin_icon.png">
-                </a>
-            </ul>
-            <ul>
-                <a id="nav_icon_div" class="nav_icon_div" href="https://www.youtube.com/@user-hm5vi4fn3k" target="_blank">
-                    <img class="nav_icon" src="./img/youtube_icon.png">
-                </a>
-            </ul>
-        </nav>
-        <!-- Add navigation links, logo, or any other header content here -->
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">Po-Hsun Chang</a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                </nav>
+                
+                <!-- Desktop Actions -->
+                <div class="desktop-actions">
+                    <a href="https://github.com/CharlesChang012" class="icon-btn" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/po-hsunchang" class="icon-btn" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#education" class="mobile-nav-link">Education</a>
+                <a href="#experience" class="mobile-nav-link">Experience</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <div class="mobile-actions">
+                    <a href="https://github.com/CharlesChang012" class="btn btn-outline">
+                        <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/po-hsunchang" class="btn btn-outline">
+                        <i data-lucide="linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Add your main content here, such as sections, articles, and other elements -->
-        <div id="home">
-            <img id="home_photo" src="./img/Subject.png">
-            <H1 id="name">Po-Hsun Chang</H1>
-        </div>
+        <!-- Hero/About Section -->
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Po-Hsun Chang</h1>
+                        <h2 class="hero-subtitle">MS Robotics Student @ University of Michigan</h2>
+                        <p class="hero-description">
+                            I am passionate about building robotics that drives the future way of living. In my spare time, I love exploring the diverse cuisine in the cities. Let's connect if you share the same interest or curious about my work!
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                            <a href="/resume.pdf" class="btn btn-outline btn-lg">Resume</a>
+                        </div>
+                        <div class="hero-contact">
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Ann Arbor, MI</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <a href="mailto:pohsun@umich.edu" style="color: inherit; text-decoration: none;">pohsun@umich.edu</a>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <span>+1 (734) 555-0123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./img/MainPhoto.jpg" alt="Po-Hsun Chang" class="profile-img">
+                    </div>
+                </div>
+                
+                <!-- Skills Section within About -->
+                <div class="hero-skills">
+                    <h3 class="skills-title">Skills & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Programming</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">C/C++</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">MATLAB</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
 
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Hardware</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">IMU</span>
+                                <span class="skill-tag">GNSS</span>
+                                <span class="skill-tag">RealSense</span>
+                                <span class="skill-tag">Encoder</span>
+                                <span class="skill-tag">LiDAR</span>
+                                <span class="skill-tag">RPi</span>
+                                <span class="skill-tag">Arduino</span>
+                                <span class="skill-tag">Gocator</span>
+                                <span class="skill-tag">LMI Controller</span>
+                                <span class="skill-tag">SWIR Camera</span>
+                                <span class="skill-tag">GelSight</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Tools</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">ROS/ROS2</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Bash</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">JIRA</span>
+                                <span class="skill-tag">Halcon</span>
+                                <span class="skill-tag">Fusion360</span>
+                                <span class="skill-tag">OpenCV</span>
+                                <span class="skill-tag">NumPy</span>
+                                <span class="skill-tag">Gazebo</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Pybullet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section bg-gradient-blue">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-description">My academic background and qualifications.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-row">
+                                <h3 class="card-title">M.S. in Electrical and Computer Engineering: Robotics</h3>
+                                <span class="badge">Aug. 2024 - May 2026</span>
+                            </div>
+                            <div class="card-subtitle-row">
+                                <p class="card-subtitle">
+                                    <img src="./icons/UMich.png" alt="University of Michigan" class="institution-icon">
+                                    University of Michigan - Ann Arbor
+                                </p>
+                                <div class="card-location"><i data-lucide="map-pin"></i><span>Ann Arbor, MI</span></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Specialized in path planning, SLAM, and computer vision</p>
+                            <div class="achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Top 3 in Robotics System Lab final competition</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-row">
+                                <h3 class="card-title">B.S. in Electrical Engineering</h3>
+                                <span class="badge">Sep. 2019 - Jun. 2023</span>
+                            </div>
+                            <div class="card-subtitle-row">
+                                <p class="card-subtitle">
+                                    <img src="./icons/NCKU.png" alt="National Cheng Kung University" class="institution-icon">
+                                    National Cheng Kung University
+                                </p>
+                                <div class="card-location"><i data-lucide="map-pin"></i><span>Tainan, Taiwan</span></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Focused on pose estimation and DSP</p>
+                            <div class="achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Received an honorable mention in 2022 Undergraduate Project Achievement Competition</li>
+                                    <li>Achieved 2nd place in the project competition for the Data Engineering for Smart Cities course</li>
+                                    <li>Top 10 Finalist Award in the 2022 RunSpace Innovation Challenge</li>
+                                    <li>Published "A Satcom On-the-Move Phased-Array Antenna Tracking Algorithm on Robot Operating System." at ICCAS 2023 (pp. 1060-1065)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Professional Certifications</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>Coursera: "Computational Motion Planning, Aerial Robotics"</li>
+                                <li>Udemy: "Autonomous Robots: Path Planning, Model Predictive Control, Localization"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section bg-gradient-slate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-description">My professional journey in software engineering.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-row">
+                                <h3 class="card-title">Machine Vision Development Intern</h3>
+                                <span class="badge">May 2025 - Present</span>
+                            </div>
+                            <div class="card-subtitle-row">
+                                <p class="card-subtitle">
+                                    <img src="./icons/Tesla.png" alt="Tesla Inc." class="institution-icon">
+                                    Tesla Inc.
+                                </p>
+                                <div class="card-location"><i data-lucide="map-pin"></i><span>Austin, TX</span></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>Deployed a <b>height measurement</b> program with <b>3.5x</b> improved repeatability to production lines for cross-functional teams to analyze correlation between plunge force to avoid stuck in tester</li>
+                                <li>Designed 2D and 3D-based <b>crack and bowing inspection</b> systems with ML-driven <b>OCR</b> in HALCON to prevent <b>$4.5M</b> material loss and <b>5-day</b> downtime, achieving robustness to sensor angles, surface residue and lighting variants</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-row">
+                                <h3 class="card-title">Research Assistant</h3>
+                                <span class="badge">Jul. 2023 - Sep. 2023</span>
+                            </div>
+                            <div class="card-subtitle-row">
+                                <p class="card-subtitle">
+                                    <img src="./icons/NCKU_spacelab.png" alt="NCKU Space Lab" class="institution-icon">
+                                    National Cheng Kung University Space Lab
+                                </p>
+                                <div class="card-location"><i data-lucide="map-pin"></i><span>Tainan, Taiwan</span></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>Software Defined Radio: Constructed Cross Ambiguity Function on signals of AIS to enhance navigation safety</li>
+                                <li>Signal Synchronization: Modified VHDL code of FPGA on LimeSDR, making GPS signal trigger data recording</li>
+                                <li>Digital Signal Processing: Implemented threshold method to detect prominent signals in raw IQ data</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-row">
+                                <h3 class="card-title">Undergraduate Student Research Assistant</h3>
+                                <span class="badge">Jan. 2022 - Jun. 2023</span>
+                            </div>
+                            <div class="card-subtitle-row">
+                                <p class="card-subtitle">
+                                    <img src="./icons/NCKU_spacelab.png" alt="NCKU Space Lab" class="institution-icon">
+                                    National Cheng Kung University Space Lab
+                                </p>
+                                <div class="card-location"><i data-lucide="map-pin"></i><span>Tainan, Taiwan</span></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>Led a team of 5 and established a modular ROS framework for user-selected sensor in satellite communication on-the-move antenna tracking, validated performance with TMYTEK mmWave kit, and presented at ICCAS 2023</li>
+                                <li>Sensor Fusion: Obtained vehicle attitude estimation from Xsens IMU utilizing the Madgwick algorithm</li>
+                                <li>Visualization: Conceived a real-time software with GTK and RVIZ showing pointing angles of targeted satellites</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-description">A showcase of my technical projects and engineering work.</p>
+                </div>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <!-- Add your footer content, such as copyright information, contact details, etc. -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Po-Hsun Chang. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/CharlesChang012" class="footer-link" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/po-hsunchang" class="footer-link" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="modal-close" id="modalClose" aria-label="Close modal">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
