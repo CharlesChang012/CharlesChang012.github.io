@@ -8,10 +8,10 @@ const projects = [
     image: "./img/WareHouseSim.jpg",
     technologies: ["SLAM", "LiDAR", "C++", "Computer Vision", "YOLOv11", "A*", "PID", "RPi5", "ORB-SLAM3"],
     keyPoints:
-      "Controls: Engineered precise trajectory system with PID loop, pure pursuit controller and IMU-based sensor fusion. \
-      SLAM: Delivered 2cm RMSE in pose estimation by implementing RPiLiDAR-SLAM using particle filter and occupancy grid mapping; performed visual-SLAM using ORB-SLAM3 with monocular images. \
-      Computer Vision: Deployed YOLOv11 to accurately identify destination and crate positions for warehouse simulation. \
-      Executed autonomous navigation using A* with obstacle distance grid and frontier exploration in unknown terrain.",
+      "Controls: Engineered precise trajectory tracking system for mobile robots with PID loop, pure pursuit controller and odometry sensor fusion with IMU for robust navigation. \
+      SLAM: Achieved 2cm RMSE in pose estimation by implementing LiDAR-SLAM using particle filter and occupancy grid mapping; performed visual-SLAM using ORB-SLAM3 with monocular 2D images for enhanced localization. \
+      Computer Vision: Automated a pick-and-place warehouse simulation utilizing YOLOv11 for precise object detection and localization of crates and drop-off points, optimizing logistics operations. \
+      Executed autonomous navigation and frontier exploration algorithms, including A* search and obstacle distance grid mapping, enabling efficient exploration of unknown environments.",
     demoUrl: "https://drive.google.com/file/d/1P2S-lES56rnGiQwiKI53u3jqmmEHZRnP/view?usp=share_link",
     githubUrl: "https://github.com/CharlesChang012/ROB-550_Botlab",
     featured: true,
@@ -24,9 +24,9 @@ const projects = [
     image: "./img/block_stacking.PNG",
     technologies: ["ROS2", "Computer Vision", "RealSense", "Kinematics", "OpenCV", "AprilTags", "RX200"],
     keyPoints:
-      "Performed camera calibration with intrinsic and extrinsic matrices using AprilTags and homography transform. \
-      Kinematics: Automated a 5DoF RX200 arm by solving forward and inverse kinematics with DH table and geometry. \
-      Computer Vision: Developed an object detection pipeline in OpenCV, achieving 85% ROI in real-time capability.",
+      "Optimized 3D image perception for robotic manipulation by improving 10% depth accuracy through camera calibration, homography transform and fusion of intrinsic matrices. \
+      Computer Vision: Developed an object detection pipeline incorporating 3-stage filtering in OpenCV, achieving 85% IoU for robust object recognition in a robotic stacking task. \
+      Kinematics: Automated pick-and-place operations for a 5-DOF RX200 robotic arm by solving forward and inverse kinematics, ensuring collision-free and efficient block stacking." ,
     demoUrl: "https://drive.google.com/file/d/1QTnxh1EtAa5_bcI0pKfocJl8Q2-F7tI0/view?usp=sharing",
     githubUrl: "https://github.com/CharlesChang012/ROB-550_Armlab.git",
     featured: true,
